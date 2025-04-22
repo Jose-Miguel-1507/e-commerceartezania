@@ -9,90 +9,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">MINKASHOP</h1>
-                <button class="menu-toggle" aria-label="Abrir menú">
-                  <i class="fas fa-bars"></i>
-              </button>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="compras.html">Compras</a></li>
-                        <li><a href="acercade.html">Acerca de</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                    </ul>
-                </nav>
+  <header>
+    <div class="container">
+        <div class="header-content">
+            <h1 class="logo">MINKASHOP</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Acerca de </a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartButton">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+ <!-- Contenido principal iría aquí -->
+
+  
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Portal de Artesanías. Todos los derechos reservados.
+            <br>
+            <!-- Iconos de redes sociales -->
+            <div class="social-media">
+                <a href="https://facebook.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/573001234567" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            Proyecto académico desarrollado con tecnologías web modernas.
+        </p>
+    </div>
+</footer>
+
+<!-- Modal del Carrito -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+            <div class="cart-items-container" id="cartItems"></div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">$0</span>
+                </div>
+                <p class="cart-taxes">Impuestos y envío calculados al finalizar</p>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary continue-shopping">Seguir Comprando</button>
+                <button class="btn btn-primary checkout-btn" disabled>Finalizar Compra</button>
             </div>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h2 class="acerca">Acerca de MINKASHOP</h2>
-            <div class="row">
-              <div class="col-6">
-                <p class="texto">En <strong>MINKASHOP</strong> creemos en el poder del arte ancestral y en la fuerza de nuestras raíces. Somos una tienda dedicada a la venta de mochilas, aretes y artesanías auténticas, elaboradas a mano por comunidades indígenas de Colombia. Nuestro propósito es honrar su tradición, apoyar su economía y llevar su talento al mundo entero. Cada pieza cuenta una historia, tejida con identidad, respeto y sabiduría ancestral.</p>
-              </div>
-              <div class="col-6 centrado">
-                <img src="https://artesaniasdecolombia.com.co/Documentos/Contenido/43081_feria_27s_esta.jpg" alt="Nuestro equipo artesanal" class="imagen">
-              </div>
-            </div>
-        
-            <div class="row" style="margin-top: 2rem;">
-              <div class="col-6">
-                <h3 class="titulo">Misión</h3>
-                <p class="texto">Promover la cultura y el arte indígena colombiano mediante la comercialización de artesanías auténticas, garantizando a nuestros artesanos un comercio justo, visibilidad y desarrollo sostenible.</p>
-              </div>
-              <div class="col-6">
-                <h3 class="titulo">Visión</h3>
-                <p class="texto">Ser reconocidos como la plataforma líder en artesanías indígenas en Latinoamérica, destacando por nuestra calidad, compromiso social y la conexión entre tradición y moda contemporánea.</p>
-              </div>
-            </div>
-        
-            <div class="row" style="margin-top: 2rem;">
-              <div class="col-6">
-                <h3 class="titulo">Objetivos</h3>
-                <ul class="texto">
-                  <li>Difundir el valor cultural de las comunidades indígenas a través de sus artesanías.</li>
-                  <li>Generar oportunidades económicas dignas y sostenibles para los artesanos.</li>
-                  <li>Fomentar el consumo consciente, responsable y con propósito.</li>
-                  <li>Preservar técnicas ancestrales de tejido y diseño.</li>
-                  <li>Crear una comunidad comprometida con el respeto a la diversidad cultural.</li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <h3 class="titulo"> Valores</h3>
-                <ul class="texto">
-                  <li><strong>Respeto por la tradición:</strong> Valoramos las técnicas y saberes transmitidos por generaciones.</li>
-                  <li><strong>Comercio justo:</strong> Trabajamos directamente con artesanos, sin intermediarios injustos.</li>
-                  <li><strong>Autenticidad:</strong> Cada producto es único y refleja una cultura viva.</li>
-                  <li><strong>Empoderamiento:</strong> Apoyamos el desarrollo y la autonomía de las comunidades indígenas.</li>
-                  <li><strong>Sostenibilidad:</strong> Promovemos prácticas que cuidan el entorno natural y cultural.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 MINKASHOP 
-              <br>
-              <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-              Todos los derechos reservados.</p>
-           
-        </div>
-    </footer>
+    </div>
+</div>
 
     <script src=".\assets\js\main.js"></script>
 </body>
