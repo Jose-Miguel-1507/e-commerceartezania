@@ -1,0 +1,161 @@
+  
+  .navbar {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .currency-selector {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .pago-section {
+    padding: 30px;
+  }
+  
+  .pago-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .pago-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .formulario-pago {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+    position: relative;
+  }
+  
+  .volver-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+  
+  .card-image {
+    height: 100px;
+    background-image: url('https://i.imgur.com/AMFZ5Ge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .resumen-compra {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+  }
+  
+  .resumen-compra h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .producto {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .producto img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .cantidad button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .detalle {
+    font-size: 14px;
+  }
+  
+  .detalle p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .pagar-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .pagar-btn:hover {
+    background-color: #0b5ed7;
+  }
+  

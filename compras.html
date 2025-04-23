@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal de Pago - Minkashop</title>
+  <link rel="stylesheet" href="assets\css\compras.css" />
+  <link rel="stylesheet" href="assets\css\styles.css">
+</head>
+<body><header>
+    <div class="container">
+        <div class="header-content">
+            <h1 class="logo">MINKASHOP</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="compras.html">Compras</a></li>
+                    <li><a href="#">Acerca de </a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartButton">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+  <section class="pago-section">
+    <h1>Portal de Pago</h1>
+    <div class="pago-container">
+      <div class="formulario-pago">
+        <button class="volver-btn">⟲</button>
+        <div class="card-image"></div>
+        <form>
+          <label for="nombre">Nombre en la tarjeta</label>
+          <input type="text" id="nombre" value="Pepito Perez Acosta" />
+
+          <label for="numero">Numero en la tarjeta</label>
+          <input type="text" id="numero" value="4556 7375 8898 9855" />
+
+          <div class="form-row">
+            <div>
+              <label for="exp">Fecha exp.</label>
+              <input type="text" id="exp" value="01 / 28" />
+            </div>
+            <div>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" value="879" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="resumen-compra">
+        <h2>Resumen de compra</h2>
+        <div class="producto">
+          <img src="https://i.imgur.com/b04Nltg.png" alt="Mochila" />
+          <div>
+            <p><strong>Artesanía Guajira</strong><br/>Mochilas</p>
+            <div class="cantidad">
+              <button onclick="cambiarCantidad(-1)">−</button>
+              <span id="cantidad">1</span>
+              <button onclick="cambiarCantidad(1)">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="detalle">
+          <p>Artesanía Guajira <span id="precio-producto">$40.000</span></p>
+          <p>Costo de envío <span>$1.000</span></p>
+          <p>Impuesto IVA <span>$1.510</span></p>
+          <p><strong>TOTAL</strong> <span id="total">$41.510</span></p>
+        </div>
+        <button class="pagar-btn">PAGAR</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Portal de Artesanías. Todos los derechos reservados.
+            <br>
+            <!-- Iconos de redes sociales -->
+            <div class="social-media">
+                <a href="https://facebook.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/573001234567" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            Proyecto académico desarrollado con tecnologías web modernas.
+        </p>
+    </div>
+</footer>
+
+<!-- Modal del Carrito -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+            <div class="cart-items-container" id="cartItems"></div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">$0</span>
+                </div>
+                <p class="cart-taxes">Impuestos y envío calculados al finalizar</p>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary continue-shopping">Seguir Comprando</button>
+                <button class="btn btn-primary checkout-btn" disabled>Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script src="assets\js\compras.js"></script>
+  <script src="assets\js\main.js"></script>
+</body>
+</html>
