@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "ajuste del botn finalizar compra"
+
+git push -u general general
