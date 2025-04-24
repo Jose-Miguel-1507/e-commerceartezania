@@ -1,0 +1,93 @@
+/*inicio de productos*/
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0d6efd;
+    border-radius: 15px;
+    color: #f8f9fa;
+}
+
+.container2 h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.image1,
+.image2,
+.image3 {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.image1 img,
+.image2 img,
+.image3 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.image1 p,
+.image2 p,
+.image3 p {
+    margin-top: 20px;
+    font-weight: bold;
+        
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0d6efd;
+    border-radius: 15px;
+    color: #f8f9fa;
+}
+
+.container3 h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.image1 img:hover, .image2 img:hover, .image3 img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+
+.container4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0d6efd;
+    border-radius: 15px;
+    color: #f8f9fa;
+}
+
+.container4 h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.container2 a, .container3 a, .container4 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*fin de productos/*
