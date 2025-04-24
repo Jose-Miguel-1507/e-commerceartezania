@@ -17,5 +17,7 @@ function actualizarPrecio() {
   document.getElementById("total").innerText = `$${total}`;
 }
 
+
+
 // Ejecutar al inicio
 actualizarPrecio();

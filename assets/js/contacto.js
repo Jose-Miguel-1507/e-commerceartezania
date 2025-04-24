@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.renderCart();
         }
         
-        
         initElements() {
             this.elements = {
                 cartOverlay: document.getElementById('cartOverlay'),
@@ -235,3 +234,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar carrito
     const cart = new ShoppingCart();
 });
+
+
+
+// Scripsts de contacto
+
+function validateForm(){
+    let Name = document.getElementById('name').value;
+    let LastName = document.getElementById('last-name').value;
+    let Phone = document.getElementById('phone').value;
+    let Email = document.getElementById('email').value;
+    let Message = document.getElementById('message').value;
+    let Terms = document.getElementById('terms').checked;
+
+    if(Name === "" || LastName === "" || Phone === "" || Email === "" || Message === "" || Terms === false){
+        return false;
+    }else{
+        return true;
+
+    }
+}
+
+let Form = document.getElementById('form');
+
+Form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(validateForm()){
+        alert('Mensaje enviado correctamente');
+        Form.reset();
+    }else{
+        alert('Todos los campos son obligatorios');
+    }
+
+});
+
