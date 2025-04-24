@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minkashop | Colombia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="assets\css\productointerno.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="d-flex flex-column min-vh-100 productointerno_page">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">MINKASHOP</h1>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Acerca de </a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li class="cart-icon">
+                            <a href="#" id="cartButton">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+  <main>
+    <!-- Hero Section Contact -->
+    <section id="hero_product-intern" class="container">
+        <div class="breadcumbs">
+            <a href="index.html">Inicio</a>
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3208 8.49805L6.33643 12.4824C6.06104 12.7578 5.61572 12.7578 5.34326 12.4824L4.68115 11.8203C4.40576 11.5449 4.40576 11.0996 4.68115 10.8271L7.50537 8.00293L4.68115 5.17871C4.40576 4.90332 4.40576 4.45801 4.68115 4.18555L5.34033 3.51758C5.61572 3.24219 6.06104 3.24219 6.3335 3.51758L10.3179 7.50195C10.5962 7.77734 10.5962 8.22266 10.3208 8.49805Z" fill="#054687"/>
+            </svg>
+            <a href="productos.html">Productos</a> 
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3208 8.49805L6.33643 12.4824C6.06104 12.7578 5.61572 12.7578 5.34326 12.4824L4.68115 11.8203C4.40576 11.5449 4.40576 11.0996 4.68115 10.8271L7.50537 8.00293L4.68115 5.17871C4.40576 4.90332 4.40576 4.45801 4.68115 4.18555L5.34033 3.51758C5.61572 3.24219 6.06104 3.24219 6.3335 3.51758L10.3179 7.50195C10.5962 7.77734 10.5962 8.22266 10.3208 8.49805Z" fill="#054687"/>
+            </svg>
+            <span>Artesanica Guajira</span>
+        </div>
+      <div class="hero_content"> 
+          <div id="hero_img" class="hero_img">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/img-artesanica-guajira.webp" loading="lazy" alt="Mochila artesanica guajira" title="Mochila artesanica guajira" />
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="hero_info">
+                <div class="hero_info-content">
+                    <div class="hero_info-top">
+                        <div class="hero_heading">
+                            <span>Mochilas</span>
+                            <h1 class="font-title fw-bold">Artesanica Guajira</h1>
+                        </div>
+                        <div class="hero_price">
+                            
+                            <span>$<span id="price">60.000</span></span>
+                            <span>Disponible</span>
+                        </div>
+                    </div>
+
+                    <div class="hero_info-mid">
+                        <p id="description_product" class="font-content">Impresionante mochila Wayuu roja, tejida a mano con hilos de alta calidad para durabilidad y estilo vibrante. Su asa trenzada y cordones multicolores resaltan la habilidad artesanal guajira. Perfecta para un toque único y artesanal en tu día a día.</p>
+                        <div class="hero_buttons">
+                            <div>
+                                <button id="reduce">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.125 6.59375H1.875C1.35732 6.59375 0.9375 7.01357 0.9375 7.53125V8.46875C0.9375 8.98643 1.35732 9.40625 1.875 9.40625H13.125C13.6427 9.40625 14.0625 8.98643 14.0625 8.46875V7.53125C14.0625 7.01357 13.6427 6.59375 13.125 6.59375Z" fill="#0A84ED"/>
+                                    </svg>
+                                        
+                                </button>
+                                <span id="number" class="font-content fw-semibold">1</span>
+                                <button id="plus">
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.2857 6.42857H9.07143V3.21429C9.07143 2.81987 8.75156 2.5 8.35714 2.5H7.64286C7.24844 2.5 6.92857 2.81987 6.92857 3.21429V6.42857H3.71429C3.31987 6.42857 3 6.74844 3 7.14286V7.85714C3 8.25156 3.31987 8.57143 3.71429 8.57143H6.92857V11.7857C6.92857 12.1801 7.24844 12.5 7.64286 12.5H8.35714C8.75156 12.5 9.07143 12.1801 9.07143 11.7857V8.57143H12.2857C12.6801 8.57143 13 8.25156 13 7.85714V7.14286C13 6.74844 12.6801 6.42857 12.2857 6.42857Z" fill="#0A84ED"/>
+                                    </svg>           
+                                </button>
+                            </div>
+                            <button id="add-to-cart" class="btn_cart font-content fw-semibold">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="hero_info-bottom">
+                        <div>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10_304)">
+                                    <path d="M14.6251 12.5H0.375067C0.167879 12.5 6.66239e-05 12.6678 6.66239e-05 12.875V13.625C6.66239e-05 13.8322 0.167879 14 0.375067 14H14.6251C14.8323 14 15.0001 13.8322 15.0001 13.625V12.875C15.0001 12.6678 14.8323 12.5 14.6251 12.5ZM1.88796 9.99852C2.03514 10.1588 2.24186 10.2498 2.45819 10.2495L5.51772 10.2453C5.75917 10.245 5.99716 10.1878 6.21241 10.0784L13.0318 6.61789C13.6585 6.29984 14.2203 5.84586 14.6026 5.25125C15.0317 4.58375 15.0783 4.1007 14.9089 3.75945C14.7399 3.41797 14.3291 3.16719 13.5437 3.11609C12.8441 3.07063 12.1482 3.25484 11.5215 3.57266L9.21264 4.7443L4.08686 2.82102C4.02523 2.7795 3.95363 2.7552 3.87946 2.75062C3.8053 2.74605 3.73125 2.76137 3.66499 2.795L2.12397 3.57711C1.87389 3.70391 1.81343 4.03766 2.0028 4.24578L5.66421 6.545L3.24522 7.77266L1.54952 6.91789C1.4911 6.88844 1.42657 6.87313 1.36114 6.87321C1.29572 6.8733 1.23123 6.88876 1.17288 6.91836L0.232332 7.39578C-0.0123552 7.52 -0.0768084 7.84391 0.101785 8.05391L1.88796 9.99852Z" fill="#054687"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10_304">
+                                        <rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-content">Envío y devoluciones gratis para este artículo</span>   
+                        </div>
+                        <div>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10_292)">
+                                    <path d="M14.9268 6.4082L13.4443 1.96094C13.2539 1.38672 12.7178 1 12.1113 1H7.96875V6.625H14.9619C14.9502 6.55176 14.9502 6.47852 14.9268 6.4082ZM7.03125 1H2.88867C2.28223 1 1.74609 1.38672 1.55566 1.96094L0.0732422 6.4082C0.0498047 6.47852 0.0498047 6.55176 0.0380859 6.625H7.03125V1ZM0 7.5625V14.5938C0 15.3701 0.629883 16 1.40625 16H13.5938C14.3701 16 15 15.3701 15 14.5938V7.5625H0Z" fill="#054687"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10_292">
+                                        <rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-content">Entrega entre 3 - 5 dias laborales</span>
+                        </div>
+                        <div>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10_296)">
+                                    <path d="M13.667 2.95215L8.04199 0.6084C7.87065 0.53732 7.68697 0.500732 7.50146 0.500732C7.31596 0.500732 7.13228 0.53732 6.96094 0.6084L1.33594 2.95215C0.811523 3.16895 0.46875 3.68164 0.46875 4.25C0.46875 10.0654 3.82324 14.085 6.95801 15.3916C7.30371 15.5352 7.69336 15.5352 8.03906 15.3916C10.5498 14.3457 14.5312 10.7334 14.5312 4.25C14.5312 3.68164 14.1885 3.16895 13.667 2.95215ZM7.50293 13.5752L7.5 2.41309L12.6533 4.56055C12.5566 8.9961 10.248 12.21 7.50293 13.5752Z" fill="#054687"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10_296">
+                                        <rect width="15" height="15" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-content">Garantía de devolución de dinero</span>
+                        </div>
+
+                    </div>
+
+                    <div class="social_links">
+                        <div class="share">
+                            <h2 class="font-content fw-semibold" >Comparte el producto</h2>
+                        </div>
+                        <div class="links">
+                            <a href="#" target="_blank" title="Facebook">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_10_327)">
+                                        <path d="M11.4907 8.9375L11.9073 6.22285H9.30254V4.46123C9.30254 3.71855 9.66641 2.99463 10.833 2.99463H12.0172V0.683398C12.0172 0.683398 10.9426 0.5 9.91514 0.5C7.77002 0.5 6.36787 1.8002 6.36787 4.15391V6.22285H3.9834V8.9375H6.36787V15.5H9.30254V8.9375H11.4907Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_327">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                    
+                            </a>
+                            <a href="#" target="_blank" title="Instagram">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00317 4.63086C6.13989 4.63086 4.63696 6.13379 4.63696 7.99707C4.63696 9.86035 6.13989 11.3633 8.00317 11.3633C9.86646 11.3633 11.3694 9.86035 11.3694 7.99707C11.3694 6.13379 9.86646 4.63086 8.00317 4.63086ZM8.00317 10.1855C6.79907 10.1855 5.8147 9.2041 5.8147 7.99707C5.8147 6.79004 6.79614 5.80859 8.00317 5.80859C9.21021 5.80859 10.1917 6.79004 10.1917 7.99707C10.1917 9.2041 9.20728 10.1855 8.00317 10.1855ZM12.2922 4.49316C12.2922 4.92969 11.9407 5.27832 11.5071 5.27832C11.0706 5.27832 10.7219 4.92676 10.7219 4.49316C10.7219 4.05957 11.0735 3.70801 11.5071 3.70801C11.9407 3.70801 12.2922 4.05957 12.2922 4.49316ZM14.5217 5.29004C14.4719 4.23828 14.2317 3.30664 13.4612 2.53906C12.6936 1.77148 11.762 1.53125 10.7102 1.47852C9.62622 1.41699 6.3772 1.41699 5.29321 1.47852C4.24438 1.52832 3.31274 1.76855 2.54224 2.53613C1.77173 3.30371 1.53442 4.23535 1.48169 5.28711C1.42017 6.37109 1.42017 9.62012 1.48169 10.7041C1.53149 11.7559 1.77173 12.6875 2.54224 13.4551C3.31274 14.2227 4.24146 14.4629 5.29321 14.5156C6.3772 14.5771 9.62622 14.5771 10.7102 14.5156C11.762 14.4658 12.6936 14.2256 13.4612 13.4551C14.2288 12.6875 14.469 11.7559 14.5217 10.7041C14.5833 9.62012 14.5833 6.37402 14.5217 5.29004ZM13.1213 11.8672C12.8928 12.4414 12.4504 12.8838 11.8733 13.1152C11.009 13.458 8.95825 13.3789 8.00317 13.3789C7.0481 13.3789 4.99438 13.4551 4.13306 13.1152C3.55884 12.8867 3.11646 12.4443 2.88501 11.8672C2.54224 11.0029 2.62134 8.95215 2.62134 7.99707C2.62134 7.04199 2.54517 4.98828 2.88501 4.12695C3.11353 3.55273 3.55591 3.11035 4.13306 2.87891C4.99731 2.53613 7.0481 2.61523 8.00317 2.61523C8.95825 2.61523 11.012 2.53906 11.8733 2.87891C12.4475 3.10742 12.8899 3.5498 13.1213 4.12695C13.4641 4.99121 13.385 7.04199 13.385 7.99707C13.385 8.95215 13.4641 11.0059 13.1213 11.8672Z" fill="white"/>
+                                </svg>         
+                            </a>
+                        </div>
+                  
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+      
+      
+    </section>
+
+    <section id="properties_product-intern" class="container">
+        <div class="tabs">
+            <div class="tab active font-content" data-tab="descripcion">Descripción</div>
+            <div class="tab font-content" data-tab="resenas">Reseñas</div>
+            <div class="tab font-content" data-tab="mas">Más productos</div>
+        </div>
+        
+        <div class="tab-content active" id="descripcion">
+            <h3 class="font-content fw-semibold">Mochila Wayuu: Arte Tejido con Historia y Empoderamiento Femenino</h3>
+            <p class="font-content">Al adquirir esta hermosa mochila, no solo obtienes una pieza de arte única, sino que también contribuyes al sustento y al empoderamiento de las mujeres artesanas de la comunidad Wayuu en la Guajira colombiana. Cada mochila es tejida a mano con técnicas ancestrales, transmitiendo historias y la rica cosmovisión de esta cultura indígena. Su vibrante color rojo y los detalles multicolores son un testimonio de su creatividad y talento.</p>
+        </div>
+        
+        <div class="tab-content" id="resenas">
+            <p class="font-content">No hay reseñas por el momento</p>
+        </div>
+        
+        <div class="tab-content" id="mas">
+            <p class="font-content">No hay productos por el momento</p>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Portal de Artesanías. Todos los derechos reservados.
+            <br>
+            <!-- Iconos de redes sociales -->
+            <div class="social-media">
+                <a href="https://facebook.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/tupagina" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/573001234567" target="_blank" class="social-icon" style="text-decoration: none;">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            Proyecto académico desarrollado con tecnologías web modernas.
+        </p>
+    </div>
+</footer>
+
+<!-- Modal del Carrito -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+            <div class="cart-items-container" id="cartItems"></div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-amount">$0</span>
+                </div>
+                <p class="cart-taxes">Impuestos y envío calculados al finalizar</p>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary continue-shopping">Seguir Comprando</button>
+                <a href="compras.html"><button class="btn btn-primary checkout-btn" disabled>Finalizar Compra</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets\js\productointerno.js"></script>
+</body>
+</html>
